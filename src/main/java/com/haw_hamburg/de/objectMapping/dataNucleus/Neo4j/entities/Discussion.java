@@ -3,7 +3,6 @@ package com.haw_hamburg.de.objectMapping.dataNucleus.Neo4j.entities;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -17,7 +16,6 @@ public class Discussion {
 
 	private String topic;
 
-//	@Join(table = "User")
 	private Set<User> users = new HashSet<>();
 
 	public Discussion(String topic) {

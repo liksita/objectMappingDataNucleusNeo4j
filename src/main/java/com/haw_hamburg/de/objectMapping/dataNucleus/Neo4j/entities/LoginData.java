@@ -1,6 +1,5 @@
 package com.haw_hamburg.de.objectMapping.dataNucleus.Neo4j.entities;
 
-import javax.jdo.annotations.EmbeddedOnly;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable(embeddedOnly="true")

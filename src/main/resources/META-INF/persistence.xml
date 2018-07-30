@@ -6,7 +6,7 @@
 	version="2.0">
 
 	<!-- JDO tutorial "unit" -->
-	<persistence-unit name="userPostsDataNucleusNeo4j">
+	<persistence-unit name="userPosts">
 		<class>com.haw_hamburg.de.objectMapping.dataNucleus.Neo4j.entities.User</class>
 		<class>com.haw_hamburg.de.objectMapping.dataNucleus.Neo4j.entities.Post</class>
 		<class>com.haw_hamburg.de.objectMapping.dataNucleus.Neo4j.entities.Comment</class>

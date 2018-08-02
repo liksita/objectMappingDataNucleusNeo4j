@@ -22,13 +22,10 @@ public class User {
 	
 	private LoginData loginData;
 	
-	@Join(table="Post")
 	private Set<Post> userPosts = new HashSet<>();
-	
-	@Join(table="Comment")
+
 	private Set<Comment> userComments = new HashSet<>();
 	
-	@Join(table="Discussion")
 	private Set<Discussion> discussions = new HashSet<>();
 
 	// constructors, getters and setters...

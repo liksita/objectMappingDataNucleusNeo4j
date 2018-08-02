@@ -50,7 +50,6 @@ public class Post extends Activity {
 		this.author = author;
 	}
 
-	@Join(table="Comment")
 	public Set<Comment> getUserComments() {
 		return userComments;
 	}

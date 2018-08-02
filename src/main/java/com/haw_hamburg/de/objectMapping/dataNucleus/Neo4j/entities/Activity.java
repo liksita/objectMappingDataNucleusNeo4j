@@ -8,7 +8,7 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
-@Inheritance(strategy=javax.jdo.annotations.InheritanceStrategy.SUBCLASS_TABLE)
+@Inheritance(strategy=javax.jdo.annotations.InheritanceStrategy.COMPLETE_TABLE)
 public abstract class Activity {
 
 	@PrimaryKey

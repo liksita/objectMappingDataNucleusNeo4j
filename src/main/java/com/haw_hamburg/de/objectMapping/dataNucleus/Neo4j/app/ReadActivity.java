@@ -45,6 +45,15 @@ public class ReadActivity {
 
 	}
 
+	@SuppressWarnings("unchecked")
+	public void readUsers() {
+		persistenceManager.currentTransaction().begin();
+		Query<User> queryUsers = persistenceManager.newQuery(
+				"SELECT FROM com.haw_hamburg.de.objectMapping.dataNucleus.Neo4j.entities.User WHERE firstName == 'user1' ");
+		users = queryUsers.executeList();
+
+	}
+
 	public void closeConnection() {
 		persistenceManager.close();
 	}

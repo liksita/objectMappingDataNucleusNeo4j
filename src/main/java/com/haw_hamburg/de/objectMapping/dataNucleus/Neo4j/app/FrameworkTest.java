@@ -84,8 +84,9 @@ public class FrameworkTest {
 		// Record Start Time
 		long startTime = System.nanoTime();
 
-		// Read Documents
-		readActivity.readEntities();
+		/// Read Documents
+		// readActivity.readEntities();
+		readActivity.readUsers();
 
 		// Record End Time and calculate Run Time
 		long estimatedTime = System.nanoTime() - startTime;
@@ -96,6 +97,8 @@ public class FrameworkTest {
 		// }
 		this.readActivity.closeConnection();
 		persistenceManagerFactory.close();
+
+	//	System.out.println("USERS: " + readActivity.getUsers().size());
 
 		// Print Result
 		return this.resultRead;

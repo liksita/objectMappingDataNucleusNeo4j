@@ -19,6 +19,7 @@ public abstract class Activity {
 
 	Date date;
 	
+	@Persistent(defaultFetchGroup="true")
 	User author;
 
 	// constructors, getters and setters...

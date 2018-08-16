@@ -3,10 +3,12 @@ package com.haw_hamburg.de.objectMapping.dataNucleus.Neo4j.entities;
 import java.util.Date;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable
 public class Comment extends Activity {
 
+	@Persistent(defaultFetchGroup="true")
 	private Post post;
 
 	public Comment(Date date) {

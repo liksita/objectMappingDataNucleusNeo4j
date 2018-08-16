@@ -21,10 +21,13 @@ public class User {
 	
 	private LoginData loginData;
 	
+	@Persistent(defaultFetchGroup="true")
 	private Set<Post> userPosts = new HashSet<>();
 
+	@Persistent(defaultFetchGroup="true")
 	private Set<Comment> userComments = new HashSet<>();
 	
+	@Persistent(defaultFetchGroup="true")
 	private Set<Discussion> discussions = new HashSet<>();
 
 	// constructors, getters and setters...

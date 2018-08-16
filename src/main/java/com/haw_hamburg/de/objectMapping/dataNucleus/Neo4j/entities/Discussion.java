@@ -16,6 +16,7 @@ public class Discussion {
 
 	private String topic;
 
+	@Persistent(defaultFetchGroup="true")
 	private Set<User> users = new HashSet<>();
 
 	public Discussion(String topic) {
